@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eventhelper.com</title>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -15,8 +19,11 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!--our externel js-->
+	 
   <!--our externel style-->
   <link href="Index.css" rel="stylesheet">
+   <link href="lgin_modal.css" rel="stylesheet">
 </head>
  <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <header>
@@ -41,7 +48,7 @@
         <a class="nav-link" href="#section1">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#section2">About us</a>
+        <a class="nav-link" href="#section2">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#section3">Help</a>
@@ -53,40 +60,20 @@
         <a class="nav-link" href="#">English</a>
       </li>
     </ul></div>
-		    <form class="form-inline" action="/action_page.php">
-
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-primary" type="submit">Search</button>
-     <button class="btn btn-success login_btn" type="submit">Log in</button>
-  </form>	
-</nav>
-  
-	 
-	   
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
+		     <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+						
+     <button type="button" class="btn btn-success login_btn"  data-toggle="modal" data-target="#modalLRForm">Log in</button>
+    </form>
   </div>
-</div>
+
+  	
+</nav>
+	  
+
+
    <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
 	 <div id="" class="w-100 text-white">
@@ -96,6 +83,9 @@
    </div> 
   </header>
 	  
+	
+
+	 
 	  <section class="my-5">
   <div id="section2" class="container">
     <div class="row">
